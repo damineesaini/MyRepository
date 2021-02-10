@@ -1,0 +1,99 @@
+/*{
+    box-sizing: inherit;
+}*/
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 5px;
+    overflow: hidden;
+    background-color:white;
+    padding: 14px 25px;
+}
+
+ul.horizontal li a.active {
+    background-color: white;
+}
+
+ a{
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color:#1ab394;
+ }
+
+ul.horizontal li {
+    float: right;
+}
+
+.container {
+    width: 40%;
+    border: 3px solid #A9A9A9;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0 auto;
+    background: white;
+}
+
+form{
+padding-top: 20px;
+	width: 100%;
+}
+
+.inputwidth{
+		padding: 10px;
+	margin: 10px;
+	width:80%
+}
+
+.select{
+	padding: 10px;
+	margin: 10px;
+	background:#1ab394;
+	color: white;
+	border-radius: 5px;
+	height: 50%;
+	width:90%
+}
+.radio{
+width:0%;
+margin-left: 20px;
+}
+
+.divbottom
+{
+	background: #DCDCDC;
+	margin-left: 0px: 
+	border-radius: 0px 0px 15px 15px;
+	padding: 40px;
+}
+
+.button{
+	float: right;
+	background: #1ab394;
+	color:white;
+	margin-bottom:10px; 
+	padding: 10px;
+	
+	border-radius: 10px 10px 10px 10px;
+}
+
+span
+{
+	padding-right: 100px;
+}
+
+
+.paddingleft{
+	padding-left: 20px; 
+}
+
+.margininput{
+	margin-left: 20px;
+}
+
+#divhead{
+	margin-top: 0px;
+	color: white;
+	padding: 20px;
+	border-radius: 10px 10px 0px 0px;
+background: #A9A9A9;
+}

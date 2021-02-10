@@ -1,0 +1,86 @@
+div{
+	margin: 25px;
+}
+p{
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+span{
+	background-color: yellow;
+}
+h1{
+	text-align: center;
+	color: #6600FF;
+}
+
+/* styling for visibility and display (ques2) */
+#visibilityid{
+	visibility:hidden;
+}
+
+#displayid{
+	display:none;
+}
+
+
+/* styling for clear and float (ques3) */
+#clearid{
+	clear:left;
+}
+
+#floatid{
+	float:right;
+}
+
+
+/* styling for position (ques4) */
+#fixed{
+	position: fixed;
+	border: 3px solid #990099;
+	right: 0;
+}
+
+#relative{
+	position: relative;
+	border: 3px solid #990033;
+}
+
+#absolute{
+	position: absolute;
+	border: 3px solid #990099;
+}
+
+#static{
+	position: static;
+	border: 3px solid #990099;
+}
+
+/* styling for table (ques5) */
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #34282C;
+  color: white;
+}
+
+/* styling for boxmodel (ques7) */
+.boxmodel{
+  width: 85%;
+  border: 10px solid blue;
+  padding: 50px;
+  margin: 20px;
+}
+

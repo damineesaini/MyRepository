@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Introduction to HTML and CSS
+</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<div>
+<ul class="horizontal">
+  <li style="float:left"><a href="#home">TO THE NEW</a></li>
+  <li><a href="#about">Quick Help</a></li>
+  <li><a href="#contact"> Home </a></li>
+</ul>
+
+<div class="container">
+	<h2 id="divhead">Bug Report</h2>
+	<form>
+	<label class="paddingleft">Title:*</label> <br>
+	<input class="inputwidth" type="text" id="title" name="title" required="text"><br><br>
+	<label class="paddingleft">Description:*</label> <br>
+	<textarea class="inputwidth" id="description" name="description" required="text" rows="6"></textarea><br><br>
+	<label class="paddingleft">Operating System</label><br>
+	<select class="select" name="os" id="os">
+		<option value="windowsxp">Windows XP</option>
+		<option value="linux">Linux</option>
+		<option value="macos">Mac OS</option>
+	</select><br><br>
+	<label class="paddingleft">Product*</label><br>
+	<select class="select" name="product" id="product">
+		<option value="dell">Dell</option>
+		<option value="lenovo">Lenovo</option>
+		<option value="apple">Apple</option>
+	</select><br><br>
+	<label class="paddingleft">Version*</label><br>
+	<input class="margininput" type="text" id="version" name="version" required="text"><br><br>
+	<label class="paddingleft">License</label><br>
+	<input class="radio" type="radio" id="free" name="license" value="free"><span>Free</span>
+	<input class="radio" type="radio" id="business" name="license" value="business"><span>Business</span><br><br>
+	<label class="paddingleft">Security*</label><br>
+	<select class="select" name="security" id="security">
+		<option value="critical">Critical</option>
+		<option value="low">Low</option>
+		<option value="medium">Medium</option>
+		<option value="high">High</option>
+	</select><br><br>
+	<label class="paddingleft">Attachments</label><br>
+	<input class="paddingleft" type="file" name="filename" id="filename"><br><br>
+	<div class="divbottom">
+	<input class="button" type="Submit" name="submit">
+	</div>
+	</form> 
+</div>
+</div>
+</body>
+</html>
