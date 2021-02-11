@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title>
+			Introduction to JQuery
+		</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			    $(".centre").click(function(){
+			        $(this).children("#button").toggle();
+			    });
+			   $(".centre input").click(function(e) {
+			        e.stopPropagation();
+			        alert("hi!!! you clicked me");
+			   });
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="head">
+				<nav>JQuery Assignment</nav><br>
+			</div>
+			<div class="centre"> CLick anywhere on white region and button will not be avaialable
+				<input type="submit" value="click" id="button">
+			</div>
+		</div>
+		<footer>
+			<p> Copyright @ 2009 - 2017 - All Rights Reserved - TO THE NEW</p>
+		</footer>
+	</body>
+</html>

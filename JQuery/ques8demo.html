@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title>
+			Introduction to JQuery
+		</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+
+			$(document).ready(function(){
+				var el = $("<input>", {
+					type: "submit",
+					value: "Click_2",
+					class:"click_next"
+				}).on('click',function(){
+			    	console.log("hello");
+			        alert("Hiiii! you enabled me successfully.");
+			  	 });
+
+			    $("#submitbtn").on('click',function(){
+			       el.insertAfter($("#submitbtn"));
+			    });
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="head">
+				<nav>JQuery Assignment</nav><br>
+			</div>
+			<div class="centre">
+				<input type="Submit" value="Click_1" id="submitbtn">
+			</div>
+		</div>
+		<footer>
+			<p> Copyright @ 2009 - 2017 - All Rights Reserved - TO THE NEW</p>
+		</footer>
+	</body>
+</html>

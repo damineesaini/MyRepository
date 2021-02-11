@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title>
+			Introduction to JQuery
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				let maxHeight=0;
+				$("body").children().each(function(){
+					console.log($(this).height());
+					if(maxHeight < $(this).height())
+					{
+						maxHeight=$(this).height();
+					}
+				});
+				console.log("max height : "+ maxHeight);
+			});
+		</script>
+	</head>
+	<body>
+		<h1> CLear and Float Property</h1>
+		<h2> this is inside div element </h2>
+		<p> This is p element outside div element </p>
+	</body>
+</html>

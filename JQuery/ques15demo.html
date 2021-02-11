@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title>
+			Introduction to JQuery
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			    // data path
+			        $.get({url: "https://jsonplaceholder.typicode.com/todos/1", type: 'GET',datatype:"json", success: function(result) {
+			     // get Result
+			    $("#para").html(JSON.stringify(result));
+			        }});
+			});
+		</script>
+	</head>
+	<body>
+		<h1> Retrive the data from server using AJAX </h1>
+		<div>
+			<p id="para"></p>
+		</div>
+	</body>
+</html>

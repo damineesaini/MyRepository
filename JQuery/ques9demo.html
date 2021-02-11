@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title>
+			Introduction to JQuery
+		</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('select').on("change",function(e)
+				{
+					console.log($("on_change :selected").val());
+				    $("#select_test").text($("#on_change :selected").val());		
+		    	});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="head">
+				<nav>JQuery Assignment</nav><br>
+			</div>
+			<div class="centre">
+				<h2>JQuery Practice</h2> 
+				<br><br>
+				<p> Select your favourite car: </p><br>
+				<select id="on_change">
+				    <option value="Buggati">Buggati</option>
+				    <option value="Land Rover">Land Rover</option>
+				    <option value="Jaguar">Jaguar</option>
+				    <option value="Porsche">Porsche</option>
+				</select>
+			</div>
+			<div id="select_test">
+			 	[You will see your selected car here!!!]
+			</div>
+		</div>
+		<footer>
+			<p> Copyright @ 2009 - 2017 - All Rights Reserved - TO THE NEW</p>
+		</footer>
+	</body>
+</html>
