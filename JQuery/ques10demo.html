@@ -10,9 +10,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$('select').hover(function()
+				$('#dropdownbtn').hover(function()
 				{
-					$("#select_test").css("background-color","yellow");		
+       				$(".dropdown").slideToggle();
 		    	});
 			});
 		</script>
@@ -26,17 +26,18 @@
 				<h2>JQuery Practice</h2> 
 				<br><br>
 				<p> Select your favourite car: </p><br>
-				<select id="on_change">
-				    <option value="Buggati">Buggati</option>
-				    <option value="Land Rover">Land Rover</option>
-				    <option value="Jaguar">Jaguar</option>
-				    <option value="Porsche">Porsche</option>
-				</select>
+				<div>
+					<button value="Hover on me!" id="dropdownbtn">Hover On Me!</button>
+				</div>
+				<div class="dropdown">
+					<ul>
+						<li><a href="#">Buggati</a></li>
+						<li><a href="#">Porsche</a></li>
+						<li><a href="#">Land Rover</a></li>
+					</ul>
+				</div>
 			</div>
-			<div id="select_test">
-			    [You will see your selected car here!!!]
-			</div>
-			</div>
+		</div>
 		<footer>
 			<p> Copyright @ 2009 - 2017 - All Rights Reserved - TO THE NEW</p>
 		</footer>
