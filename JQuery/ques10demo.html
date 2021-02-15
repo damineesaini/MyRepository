@@ -10,9 +10,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$('#dropdownbtn').hover(function()
+				$('#dropdownbtn').hover(function()  // binding hover function with elemnt having id="dropdownbtn"
 				{
-       				$(".dropdown").slideToggle();
+       				$(".dropdown").slideToggle(); //slideToggle will hide the element if visible and vice versa
 		    	});
 			});
 		</script>
@@ -27,9 +27,9 @@
 				<br><br>
 				<p> Select your favourite car: </p><br>
 				<div>
-					<button value="Hover on me!" id="dropdownbtn">Hover On Me!</button>
+					<button value="Hover on me!" id="dropdownbtn">Hover On Me!</button> <!-- dropdown button binded with hover event -->
 				</div>
-				<div class="dropdown">
+				<div class="dropdown"> <!-- dropdown list on wich slideToggle method is called -->
 					<ul>
 						<li><a href="#">Buggati</a></li>
 						<li><a href="#">Porsche</a></li>

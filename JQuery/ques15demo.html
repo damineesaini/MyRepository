@@ -8,18 +8,18 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-			    // data path
+			    // data path  
 			        $.get({url: "https://jsonplaceholder.typicode.com/todos/1", type: 'GET',datatype:"json", success: function(result) {
 			     // get Result
-			    $("#para").html(JSON.stringify(result));
-			        }});
+			    $("#para").html(JSON.stringify(result)); // to set the contents of the elemnt with id "para" to result ('i.e. data sent 
+			        }});								//from the server')	
 			});
 		</script>
 	</head>
 	<body>
 		<h1> Retrive the data from server using AJAX </h1>
 		<div>
-			<p id="para"></p>
+			<p id="para"></p> 
 		</div>
 	</body>
 </html>

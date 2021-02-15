@@ -14,14 +14,14 @@
 					type: "submit",
 					value: "Click_2",
 					id:"click_next"
-				});
+				});   // created a new element of type submit (button)
 
-				$("#submitbtn").bind( "click", function(){
-		       		el.insertAfter($("#submitbtn"));
+				$("#submitbtn").bind( "click", function(){			// binding a click function with button having id "submitbtn"
+		       		el.insertAfter($("#submitbtn"));				// on click a new element 'el' cerated above is inserted after the 1st button element
 		    	});	
 
 		    	$("#click_next").bind( "click", function(){
-		       		alert("hii... i am the new button");
+		       		alert("hii... i am the new button");			
 		    	});						
 			});
 		</script>
@@ -34,7 +34,7 @@
 			<div class="centre">
 				<h2>JQuery Practice</h2> 
 				<br><br>
-				<input type="Submit" value="Click_1" id="submitbtn">
+				<input type="Submit" value="Click_1" id="submitbtn"> <!-- already existing button on clicking it new button will be inserted -->
 			</div>
 		</div>
 		<footer>

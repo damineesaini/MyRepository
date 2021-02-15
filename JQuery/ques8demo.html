@@ -15,13 +15,13 @@
 					type: "submit",
 					value: "Click_2",
 					class:"click_next"
-				}).on('click',function(){
+				}).on('click',function(){		// binding a click event with the newly created button element 'el'
 			    	console.log("hello");
 			        alert("Hiiii! you enabled me successfully.");
 			  	 });
 
-			    $("#submitbtn").on('click',function(){
-			       el.insertAfter($("#submitbtn"));
+			    $("#submitbtn").on('click',function(){// binding a click function with button having id "submitbtn"
+		       		el.insertAfter($("#submitbtn"));				// on click a new element 'el' cerated above is inserted after the 1st button element
 			    });
 			});
 		</script>

@@ -11,15 +11,15 @@
 		<script>
 			$(document).ready(function(){
 
-				let image_arr=["image1.jpg","image2.jpg","hike.jpg"];
-			 	let index=0;
-			 	setInterval(function(){ 
+				let image_arr=["image1.jpg","image2.jpg","hike.jpg"]; //array  consist of image names
+			 	let index=0; //setting it to 0, it is an iterating variable
+			 	setInterval(function(){  //will will execute the function in a particular time interval
 			 		if(index>2)
-			 			index=0;
+			 			index=0; //if index is greater than 2 then set it back to 0
 			 		else
-			 			index++;
+			 			index++; //incrementing the index variable to loop through images
 			 		console.log(index);
-			 		$(".centre").attr("src",image_arr[index]);}, 500);
+			 		$(".centre").attr("src",image_arr[index]);}, 500); //changing the src value to the name of image using image array
 			});
 		</script>
 	</head>
@@ -29,7 +29,7 @@
 				<nav>TO THE NEW</nav>
 			</div>
 			<div>
-				<img class="centre" src="hike.jpg">
+				<img class="centre" src="hike.jpg">  // element whose src value will be changed
 			</div>
 		</div>
 		<footer>

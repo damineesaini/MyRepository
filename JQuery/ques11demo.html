@@ -10,9 +10,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-			    $("#linking").click(function(event){
-			      	event.preventDefault();
-			      console.log("event prevented");
+			    $("#linking").click(function(event){ //binding click event with a element
+			      	event.preventDefault();		// to prevent the default event from occuring
+			      console.log("event prevented"); 
 			    });
 			});
 		</script>
@@ -25,7 +25,7 @@
 			<div class="centre">
 				<h2>JQuery Practice</h2> 
 				<br><br>
-				  link:<a id="linking" href="https://www.google.com/"> Google </a>
+				  link:<a id="linking" href="https://www.google.com/"> Google </a> <!-- elemnt on which event is prevented -->
 			</div>
 		</div>
 		<footer>

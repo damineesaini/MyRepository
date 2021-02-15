@@ -10,10 +10,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$('select').on("change",function(e)
+				$('select').on("change",function(e) // on change event for select element
 				{
-					console.log($("on_change :selected").val());
-				    $("#select_test").text($("#on_change :selected").val());		
+					console.log($("on_change :selected").val()); // printing value of selected element on console
+				    $("#select_test").text($("#on_change :selected").val()); //changing the text of element with id "select_test" with the value selected in dropdown		
 		    	});
 			});
 		</script>
@@ -27,14 +27,14 @@
 				<h2>JQuery Practice</h2> 
 				<br><br>
 				<p> Select your favourite car: </p><br>
-				<select id="on_change">
+				<select id="on_change">  			<!-- select element -->
 				    <option value="Buggati">Buggati</option>
 				    <option value="Land Rover">Land Rover</option>
 				    <option value="Jaguar">Jaguar</option>
 				    <option value="Porsche">Porsche</option>
 				</select>
 			</div>
-			<div id="select_test">
+			<div id="select_test"> <!-- element whose text will be replaced with the text of selected option -->
 			 	[You will see your selected car here!!!]
 			</div>
 		</div>

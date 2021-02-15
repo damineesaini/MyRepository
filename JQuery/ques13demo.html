@@ -8,15 +8,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				let maxHeight=0;
-				$("body").children().each(function(){
+				let maxHeight=0;  //setting a variable which will contain the maximum height value to 0
+				$("body").children().each(function(){ //to loop through all the child elements of the body element
 					console.log($(this).height());
-					if(maxHeight < $(this).height())
-					{
-						maxHeight=$(this).height();
+					if(maxHeight < $(this).height())  // comparing the height of current element with the maxHeight variable
+					{									// if height of current element is greater than the value of maxHeight variable
+						maxHeight=$(this).height();  // setting the value maxHeight equal to the height of current element
 					}
-				});
-				console.log("max height : "+ maxHeight);
+				});// end of each 
+				console.log("max height : "+ maxHeight); // printing maximum height
 			});
 		</script>
 	</head>

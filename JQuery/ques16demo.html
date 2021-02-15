@@ -10,10 +10,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-        $(".delete").click(function(){
-          let to_remove = $(this).parents('tr').first();
+        $(".delete").click(function(){ // binf=ding click event with the element with class "delete"
+          let to_remove = $(this).parents('tr').first(); // finding the parent element (row) whose delete button is clicked
           $.ajax({url: "https://jsonplaceholder.typicode.com/todos/1",datatype:"json", success: function(result) {
-                to_remove.remove();
+                to_remove.remove(); // to remove the particular row from table
           }});
         });
       });

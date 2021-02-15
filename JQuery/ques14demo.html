@@ -10,9 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
-          $(".score").each(function(){
-            if($(this).text()>10)
-              $(this).css("background-color","yellow");
+          $(".score").each(function(){ //to loop through all the rows of score column
+            if($(this).text()>10) //checking if score is greater than 10 or not
+              $(this).css("background-color","yellow"); //if condition satisfy then change the background color to yellow of that particular cell
           });
       });
     </script>

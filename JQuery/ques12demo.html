@@ -10,12 +10,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-			    $(".centre").click(function(){
-			        $(this).children("#button").toggle();
-			    });
-			   $(".centre input").click(function(e) {
-			        e.stopPropagation();
-			        alert("hi!!! you clicked me");
+			   $("li").click(function(e) {  //click event for li element
+			        alert("hi!!! you clicked a list");
+			   }).on('click','.centre',function(e) { //binded click function of parent 'div' with child 'li' and prevented the event from occuring
+        			e.stopPropagation(); 
+        			alert('hiii');
 			   });
 			});
 		</script>
@@ -25,8 +24,9 @@
 			<div class="head">
 				<nav>JQuery Assignment</nav><br>
 			</div>
-			<div class="centre"> CLick anywhere on white region and button will not be avaialable
-				<input type="submit" value="click" id="button">
+			<div class="centre"> List elements are: <!--  //parent div -->
+				<li>first element</li>		<!-- //child div -->
+				<li>second element</li>
 			</div>
 		</div>
 		<footer>
