@@ -1,28 +1,47 @@
 package com.IntroductionJava1;
 
+//parent class bank
 class bank{
-   public void getDetails(String name,float roi){
-        System.out.println("\nDetails of bank are: ");
-        System.out.println("Bank name: State Bank of India"+name);
-        System.out.println("Rate of interest: "+ roi);
+    float interest_rate;
+
+   bank(float roi){
+       this.interest_rate=roi;
+   }
+
+    public  float getDetails() {
+        return this.interest_rate;
     }
 }
 
+//child class of bank - SBI
 class SBI extends bank{
-    public void getDetails(String name , float roi){
-        super.getDetails(name,roi);
+    SBI(float roi){
+        super(roi);
+    }
+    public float getDetails(){
+        return super.getDetails();
     }
 }
 
+//child class of bank - BOI
 class BOI extends bank{
-    public void getDetails(String name , float roi){
-        super.getDetails(name,roi);
+
+    BOI(float roi){
+        super(roi);
+    }
+    public float getDetails(){
+        return super.getDetails();
     }
 }
 
+//child class of bank - ICICI
 class ICICI extends bank{
-   public void getDetails(String name , float roi){
-       super.getDetails(name,roi);
+
+    ICICI(float roi){
+        super(roi);
+    }
+   public float getDetails(){
+       return super.getDetails();
     }
 }
 
@@ -30,13 +49,13 @@ public class ques11demo {
 
     public static void main(String[] args)
     {
-        SBI obj_sbi = new SBI();
-        obj_sbi.getDetails("State Bank of India",6.5f);
+        SBI obj_sbi = new SBI(6.5f);
+        System.out.println("Details of SBI bank: "+obj_sbi.getDetails() +"%");
 
-        BOI obj_boi = new BOI();
-        obj_boi.getDetails("Bank of India",5.9f);
+        BOI obj_boi = new BOI(5.9f);
+        System.out.println("Details of BOI bank: "+obj_boi.getDetails() +"%");
 
-        ICICI obj_icici = new ICICI();
-        obj_icici.getDetails("ICICI Bank", 6.9f);
+        ICICI obj_icici = new ICICI(6.9f);
+        System.out.println("Details of ICICI bank: "+obj_icici.getDetails() +"%");
     }
 }

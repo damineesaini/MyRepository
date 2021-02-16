@@ -13,25 +13,20 @@ public class ques9demo {
         this.house = house;
     }
 
-    public void getPrice()
+    public int getPrice()
     {
         switch (house)
         {
             case Flat:
-                System.out.println("Price for flat : Rs. 8 lakhs");
-                break;
+                return 200000;
             case Floor:
-                System.out.println("Price for floor : Rs. 14 lakhs");
-                break;
+                return 1400000;
             case Villa:
-                System.out.println("Price for villa : Rs. 50 lakhs");
-                break;
+                return 5000000;
             case Bunglow:
-                System.out.println("Price for bunglow : Rs. 2 crore");
-                break;
+                return 20000000;
             default:
-                System.out.println("invalid choice");
-                break;
+                return -1;
         }
     }
 
@@ -40,6 +35,6 @@ public class ques9demo {
     {
         String house_type="Villa";
         ques9demo object = new ques9demo(HouseType.valueOf(house_type));
-        object.getPrice();
+        System.out.println("Price for " + house_type + " : Rs." + object.getPrice());
     }
 }
