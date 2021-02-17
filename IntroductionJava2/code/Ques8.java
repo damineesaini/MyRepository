@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Ques8 {
 
     static void using_while(){
-        Scanner keyboard = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter a word");
-        String word = keyboard.next();
+        String word = scan.next();
         while(!word.equals("done"))
         {
             if(word.charAt(0) == word.charAt(word.length() - 1))
@@ -17,14 +17,14 @@ public class Ques8 {
             {
                 System.out.println("First and last character are NOT equals for the word: " + word);
             }
-            word = keyboard.next();
+            word = scan.next();
         }
     }
 
     static void using_doWhile(){
-        Scanner keyboard = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter a word");
-        String word = keyboard.next();
+        String word = scan.next();
         do
         {
             if(word.charAt(0) == word.charAt(word.length() - 1))
@@ -35,7 +35,7 @@ public class Ques8 {
             {
                 System.out.println("First and last character are NOT equals for the word: " + word);
             }
-            word = keyboard.next();
+            word = scan.next();
         }while(!word.equals("done"));
     }
 
