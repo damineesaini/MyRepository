@@ -15,12 +15,12 @@ public class Cashier extends Order{
     }
     public void setPaymentStatus(boolean){}//to set payment status
 
-    public boolean getpaymentStatus(){ return paymentStatus;}//return payment status
+    public boolean getPaymentStatus(){ return paymentStatus;}//return payment status
 
-    public String notify_cust() //asks barista for order completed or not. till then notifies customer to wait
+    public String notifyCust() //asks barista for order completed or not. till then notifies customer to wait
     {
         System.out.println("wait please..");
-        return Barista.notify_order();
+        return Barista.notifyOrder();
     }
 
 }

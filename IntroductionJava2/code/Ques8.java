@@ -3,36 +3,30 @@ package com.IntroductionJava2;
 import java.util.Scanner;
 public class Ques8 {
 
-    static void using_while(){
+    static void usingWhile(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a word");
         String word = scan.next();
-        while(!word.equals("done"))
-        {
-            if(word.charAt(0) == word.charAt(word.length() - 1))
-            {
+        while(!word.equals("done")) {
+            if(word.charAt(0) == word.charAt(word.length() - 1)){
                 System.out.println("First and last character are equals for the word: " + word);
             }
-            else
-            {
+            else{
                 System.out.println("First and last character are NOT equals for the word: " + word);
             }
             word = scan.next();
         }
     }
 
-    static void using_doWhile(){
+    static void usingDoWhile(){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a word");
         String word = scan.next();
-        do
-        {
-            if(word.charAt(0) == word.charAt(word.length() - 1))
-            {
+        do {
+            if(word.charAt(0) == word.charAt(word.length() - 1)){
                 System.out.println("First and last character are equals for the word: " + word);
             }
-            else
-            {
+            else{
                 System.out.println("First and last character are NOT equals for the word: " + word);
             }
             word = scan.next();
@@ -41,11 +35,9 @@ public class Ques8 {
 
     public static void main(String[] args){
         System.out.println("Using while loop: ");
-        Ques8.using_while();
+        Ques8.usingWhile();
 
         System.out.println("Using do-while loop: ");
-        Ques8.using_doWhile();
-
+        Ques8.usingDoWhile();
     }
-
 }

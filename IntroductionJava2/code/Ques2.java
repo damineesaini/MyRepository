@@ -2,7 +2,7 @@ package com.IntroductionJava2;
 
 public class Ques2 {
 
-    public static char[] sort_string(char[] ch_array){
+    public static char[] sortString(char[] ch_array){
         int size = ch_array.length;
 
         for (int i = 1; i < size; i++) {
@@ -13,7 +13,6 @@ public class Ques2 {
                 ch_array[j + 1] = ch_array[j];
                 --j;
             }
-
             ch_array[j + 1] = key;
         }
         return ch_array;
@@ -22,7 +21,7 @@ public class Ques2 {
     public static void main(String[] args){
         String input="ghtefhdgyhddsay";
         char[] unsorted = input.toCharArray();
-        String sorted = String.valueOf(sort_string(unsorted));
+        String sorted = String.valueOf(sortString(unsorted));
         System.out.println("\n Unsorted string is : \""+input+"\"");
         System.out.println("\n Sorted string is : \""+ sorted+"\"");
     }

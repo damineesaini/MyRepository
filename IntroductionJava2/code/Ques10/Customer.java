@@ -7,7 +7,7 @@ public class Customer {
     }
      public void getNotification()
      {
-         Cashier.notify_cust(s);//waits for the cashier to notify
+         Cashier.notifyCust(s);//waits for the cashier to notify
      }
 
 }

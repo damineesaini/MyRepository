@@ -6,11 +6,11 @@ public class Barista extends Order {
         //takes next order from the order queue
     }
 
-    public void completed_order() {
+    public void completedOrder() {
         //puts the completed order in the completeorder queue
     }
 
-    public String notify_order() {
+    public String notifyOrder() {
         return "order completed"; // to notify about order completion
     }
 }
