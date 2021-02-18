@@ -1,9 +1,9 @@
 package com.IntroductionJava2;
 
 public class Chairs extends Furniture {
-    int stressScore;
-    int fireScore;
-    int count;
+    private int stressScore;
+    private int fireScore;
+    private int count;
     protected void stressTest(){
         System.out.println("Stress Test score is"+this.stressScore);
     }

@@ -1,10 +1,10 @@
 package com.IntroductionJava2;
 
 public class Order {
-    int orderid;
-    String customer_name;
-    String Cshier_name;
-    String Coffe_type;
+    private int orderid;
+    private String customer_name;
+    private String Cshier_name;
+    private String Coffe_type;
     float amount;
     boolean paymentStatus;
 

@@ -2,8 +2,8 @@ package com.IntroductionJava2;
 
 public class Table extends Furniture{
 
-        int stressScore;
-        int fireScore;
+        private int stressScore;
+        private int fireScore;
         public void stressTest(){
             System.out.println("Stress Test score is "+this.stressScore);
         }

@@ -1,8 +1,8 @@
 package com.IntroductionJava2;
 
 class Fruits implements Cloneable{
-    int quantity;
-    String name;
+    private int quantity;
+    private String name;
 
     Fruits(int quantity,String name){
         this.name=name;

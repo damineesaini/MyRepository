@@ -1,7 +1,7 @@
 package com.IntroductionJava2;
 
 public class Cashier extends Order{
-    int token;
+    private int token;
 
     public void createOrder(String orderdetails) // creates a new order
     {

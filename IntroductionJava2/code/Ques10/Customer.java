@@ -1,7 +1,7 @@
 package com.IntroductionJava2;
 
 public class Customer {
-    int token;
+    private int token;
     public void placeOrder( String orderdetails){ //places coffee order
        token = Cashier.makePayment(amount); //do the payment n gets a token in return
     }

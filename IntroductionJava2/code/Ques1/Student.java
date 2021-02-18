@@ -5,8 +5,8 @@ interface Fine {
 }
 
 public class Student implements Fine {
-    String name;
-    int id;
+    private String name;
+    private int id;
 
     Student(String name,int id){
         this.name=name;
