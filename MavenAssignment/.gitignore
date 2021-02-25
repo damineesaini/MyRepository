@@ -5,3 +5,6 @@ firstMavenProject/Module1/target/maven-status
 firstMavenProject/target/classes
 firstMavenProject/target/generated-sources
 firstMavenProject/target/maven-status
+firstMavenProject/Module2/target/classes
+firstMavenProject/Module2/target/generated-sources
+firstMavenProject/Module2/target/maven-status
