@@ -6,11 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class OrderTest {
 
+    Order orderObj = new Order(85,"Books",45.8);
+
     @Test
     void getQuantity() {
-        //given
-        Order orderObj = new Order();
-        orderObj.setQuantity(85);
         //when
         int quantity = orderObj.getQuantity();
         //then
@@ -20,18 +19,15 @@ class OrderTest {
     @Test
     void setQuantity() {
         //given
-        Order orderObj = new Order();
+        Order orderObj2 = new Order();
         //when
-        Order returnObject = orderObj.setQuantity(4);
+        Order returnObject = orderObj2.setQuantity(4);
         //then
-        assertEquals(returnObject,orderObj);
+        assertEquals(returnObject,orderObj2);
     }
 
     @Test
     void getItemName() {
-        //given
-        Order orderObj = new Order();
-        orderObj.setItemName("Books");
         //when
         String name = orderObj.getItemName();
         //then
@@ -41,18 +37,15 @@ class OrderTest {
     @Test
     void setItemName() {
         //given
-        Order orderObj = new Order();
+        Order orderObj2 = new Order();
         //when
-        Order returnObject = orderObj.setItemName("books");
+        Order returnObject = orderObj2.setItemName("books");
         //then
-        assertEquals(returnObject,orderObj);
+        assertEquals(returnObject,orderObj2);
     }
 
     @Test
     void getPrice() {
-        //given
-        Order orderObj = new Order();
-        orderObj.setPrice(45.8);
         //when
         double price = orderObj.getPrice();
         //then
@@ -63,20 +56,20 @@ class OrderTest {
     @Test
     void setPrice() {
         //given
-        Order orderObj = new Order();
+        Order orderObj2 = new Order();
         //when
-        Order returnObject = orderObj.setPrice(45.5);
+        Order returnObject = orderObj2.setPrice(45.5);
         //then
-        assertEquals(returnObject,orderObj);
+        assertEquals(returnObject,orderObj2);
     }
 
     @Test
     void getPriceWithTex() {
         //given
-        Order orderObj = new Order();
-        orderObj.setPriceWithTex(85.5);
+        Order orderObj2 = new Order();
+        orderObj2.setPriceWithTex(85.5);
         //when
-        double priceWithTex = orderObj.getPriceWithTex();
+        double priceWithTex = orderObj2.getPriceWithTex();
         //then
         assertEquals(priceWithTex,85.5);
 
@@ -85,11 +78,11 @@ class OrderTest {
     @Test
     void setPriceWithTex() {
         //given
-        Order orderObj = new Order();
+        Order orderObj2 = new Order();
         //when
-        Order returnObject = orderObj.setPriceWithTex(56.7);
+        Order returnObject = orderObj2.setPriceWithTex(56.7);
         //then
-        assertEquals(returnObject,orderObj);
+        assertEquals(returnObject,orderObj2);
     }
 }
 
