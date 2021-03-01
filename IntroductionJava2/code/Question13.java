@@ -16,7 +16,7 @@ class MyException extends Exception{
     }
 }
 
-public class Ques13 {
+public class Question13 {
     public static void main(String[] args) throws MyException{
         try {
             throw new MyException("Caught an exception without stack trace", true);

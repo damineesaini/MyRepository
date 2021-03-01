@@ -11,7 +11,7 @@ public class ques1demo {
         System.out.println("Substring string to replace: \""+changeSubstr + "\"");
         System.out.println("Substring string to replace with: \""+ changedWith + "\"");
 
-        mainString = main_string.replaceAll(changeSubstr,changedWith);
+        mainString = mainString.replaceAll(changeSubstr,changedWith);
 
         System.out.println("Modified string is: \""+mainString + "\"");
     }

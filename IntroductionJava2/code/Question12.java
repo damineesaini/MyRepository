@@ -34,7 +34,7 @@ class Child extends Parent {
         System.out.println("instance - child");
     }
 }
-public class Ques12 {
+public class Question12 {
 
     public static void main(String[] args) {
 	 Child objChild = new Child();

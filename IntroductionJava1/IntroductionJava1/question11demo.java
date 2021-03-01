@@ -45,7 +45,7 @@ class ICICI extends bank{
     }
 }
 
-public class ques11demo {
+public class question11demo {
 
     public static void main(String[] args)
     {

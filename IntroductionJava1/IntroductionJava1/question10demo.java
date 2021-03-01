@@ -1,7 +1,7 @@
 package com.IntroductionJava1;
 
 
-public class ques10demo {
+public class question10demo {
     //Adding 2 integer number
     static int add(int num1,int num2)
     {
@@ -37,13 +37,13 @@ public class ques10demo {
 
     public static void main(String[] args) {
 
-        System.out.println("Adding 2 integers: 67 + 78 = "+ques10demo.add(67,78));
-        System.out.println("Adding 2 doubles: 689.987 + 7877.9876 = "+ques10demo.add(689.987,7877.9876));
+        System.out.println("Adding 2 integers: 67 + 78 = "+question10demo.add(67,78));
+        System.out.println("Adding 2 doubles: 689.987 + 7877.9876 = "+question10demo.add(689.987,7877.9876));
 
-        System.out.println("Multiplying 2 floats: 67.9 * 78.7 = "+ques10demo.multiply(67.9f,78.7f));
-        System.out.println("Multiplying 2 integers: 67 * 78 = "+ques10demo.multiply(67,78));
+        System.out.println("Multiplying 2 floats: 67.9 * 78.7 = "+question10demo.multiply(67.9f,78.7f));
+        System.out.println("Multiplying 2 integers: 67 * 78 = "+question10demo.multiply(67,78));
 
-        System.out.println("Concatenate 2 strings: 'Daminee' , 'Saini' = "+ques10demo.concat("Daminee"," Saini"));
-        System.out.println("Concatenate 3 strings: 'hello' , 'daminee' , 'saini' = "+ques10demo.concat("hello"," daminee"," saini"));
+        System.out.println("Concatenate 2 strings: 'Daminee' , 'Saini' = "+question10demo.concat("Daminee"," Saini"));
+        System.out.println("Concatenate 3 strings: 'hello' , 'daminee' , 'saini' = "+question10demo.concat("hello"," daminee"," saini"));
     }
 }
