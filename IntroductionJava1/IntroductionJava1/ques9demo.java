@@ -33,8 +33,8 @@ public class ques9demo {
 
     public static void main(String[] args)
     {
-        String house_type="Villa";
-        ques9demo object = new ques9demo(HouseType.valueOf(house_type));
-        System.out.println("Price for " + house_type + " : Rs." + object.getPrice());
+        String houseType="Villa";
+        ques9demo object = new ques9demo(HouseType.valueOf(houseType));
+        System.out.println("Price for " + houseType + " : Rs." + object.getPrice());
     }
 }

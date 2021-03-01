@@ -17,7 +17,7 @@ public class Ques8 implements Message2,DefaultMethod2{
         Message2 obj = new Ques8();
         obj.printMessage();
 
-        DefaultMethod2 obj_dm = new Ques8();
-        obj_dm.defaultMessage();
+        DefaultMethod2 objDm = new Ques8();
+        objDm.defaultMessage();
     }
 }

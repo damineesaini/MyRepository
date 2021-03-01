@@ -37,6 +37,6 @@ class Child extends Parent {
 public class Ques12 {
 
     public static void main(String[] args) {
-	 Child obj_child = new Child();
+	 Child objChild = new Child();
     }
 }

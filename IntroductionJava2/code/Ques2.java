@@ -2,20 +2,20 @@ package com.IntroductionJava2;
 
 public class Ques2 {
 
-    public static char[] sortString(char[] ch_array){
-        int size = ch_array.length;
+    public static char[] sortString(char[] chArray){
+        int size = chArray.length;
 
         for (int i = 1; i < size; i++) {
-            char key = ch_array[i];
+            char key = chArray[i];
             int j = i - 1;
 
-            while (j >= 0 && key < ch_array[j]) {
-                ch_array[j + 1] = ch_array[j];
+            while (j >= 0 && key < chArray[j]) {
+                chArray[j + 1] = chArray[j];
                 --j;
             }
-            ch_array[j + 1] = key;
+            chArray[j + 1] = key;
         }
-        return ch_array;
+        return chArray;
     }
 
     public static void main(String[] args){

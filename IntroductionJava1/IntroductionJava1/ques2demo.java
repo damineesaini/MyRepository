@@ -3,23 +3,23 @@ package com.IntroductionJava1;
 public class ques2demo {
     public static void main(String[] args) {
         String string = "Whoever too is happy will make others happy too happy too.";
-        String[] words_arr = string.split("\\W");
+        String[] wordsArr = string.split("\\W");
         int count;
-        for(int i=0; i<words_arr.length-1;i++)
+        for(int i=0; i<wordsArr.length-1;i++)
         {   count =1;
-            for(int j=i+1; j<words_arr.length;j++)
+            for(int j=i+1; j<wordsArr.length;j++)
             {
-                if(words_arr[i].equals(words_arr[j]) && !(words_arr[i].equals("")))
+                if(wordsArr[i].equals(wordsArr[j]) && !(wordsArr[i].equals("")))
                 {
                     count++;
-                    words_arr[j]="";
+                    wordsArr[j]="";
                 }
 
             }
             if(count>1)
             {
-                System.out.println(words_arr[i]+" : "+count);
-                words_arr[i]="";
+                System.out.println(wordsArr[i]+" : "+count);
+                wordsArr[i]="";
             }
         }
 
