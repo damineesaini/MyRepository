@@ -1,12 +1,16 @@
 package com.IntroductionJava1;
 
+import java.util.Arrays;
+
 public class ques6demo {
 
     public static void main(String[] args) {
 
-        int[] array={1,1,2,2,3,3,4,4,5,5,6,6,7,7,8};
+        int[] array={1,2,3,4,5,6,7,8,2,3,5,1,4,7,6};
 
         int result = -1;
+
+        Arrays.sort(array);
 
         for (int i = 0; i < array.length-1; i += 2)
         {
