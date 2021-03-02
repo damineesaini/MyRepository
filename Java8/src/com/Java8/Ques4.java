@@ -1,5 +1,6 @@
 package com.Java8;
 
+@FunctionalInterface
 interface ConstructorReference{
     Employee getEmployee(String name,int age,String city);
 }

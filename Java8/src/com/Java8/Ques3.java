@@ -1,5 +1,6 @@
 package com.Java8;
 
+@FunctionalInterface
 interface FunctionalInterfaceToReturnInt{
     int returnInt(int num1,int num2);
 }

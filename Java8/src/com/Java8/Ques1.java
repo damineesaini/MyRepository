@@ -1,17 +1,21 @@
 package com.Java8;
 
+@FunctionalInterface
 interface GreaterThan{
     boolean isGreater(int num1, int num2);
 }
 
+@FunctionalInterface
 interface IncrementBy1{
     int increment(int num);
 }
 
+@FunctionalInterface
 interface Concatenate {
         String concatenation(String str1, String str2);
 }
 
+@FunctionalInterface
 interface UpperCase{
     String toUpper(String str);
 }
