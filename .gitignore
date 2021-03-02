@@ -1,2 +1,12 @@
 /trial.txt
-
+IntroductionJava2/.idea
+IntroductionJava2/IntroductionJava2.iml
+UnitTesting/.idea
+UnitTesting/target/classes
+UnitTesting/target/generated-sources
+UnitTesting/target/maven-status
+UnitTesting/UnitTesting.iml
+Java8/.idea
+Java8/Java8.iml
+Multithreading/.idea
+Multithreading/Multithreading.iml
