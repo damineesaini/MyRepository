@@ -1,8 +1,8 @@
 package com.Java8;
 
-interface Message2{
+interface DefaultMethod1{
     default void printMessage(){
-        System.out.println("This is a default method of interface Message2");
+        System.out.println("This is a default method of interface DefaultMethod1");
     }
 }
 
@@ -12,12 +12,12 @@ interface DefaultMethod2{
     }
 }
 
-public class Ques8 implements Message2,DefaultMethod2{
+public class Ques8 implements DefaultMethod1,DefaultMethod2{
     public static void main(String[] args){
-        Message2 obj = new Ques8();
-        obj.printMessage();
+        DefaultMethod1 defaultMethod1Object = new Ques8();
+        defaultMethod1Object.printMessage();
 
-        DefaultMethod2 objDm = new Ques8();
-        objDm.defaultMessage();
+        DefaultMethod2 defaultMethod2Object = new Ques8();
+        defaultMethod2Object.defaultMessage();
     }
 }

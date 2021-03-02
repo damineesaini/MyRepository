@@ -3,7 +3,7 @@ package com.multithreading;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
-class Atomic{
+class AtomicClass{
     private final AtomicInteger count = new AtomicInteger(0);
 
     public int incrementAndGet() {
@@ -19,10 +19,10 @@ public class Question12 {
     public static void main(String[] args)
     {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
-        Atomic atomicObj = new Atomic();
+        AtomicClass atomicClassObject = new AtomicClass();
 
         for(int i = 0; i < 1000; i++) {
-            executorService.submit(atomicObj::incrementAndGet);
+            executorService.submit(atomicClassObject::incrementAndGet);
         }
 
         executorService.shutdown();
@@ -32,6 +32,6 @@ public class Question12 {
             e.printStackTrace();
         }
 
-        System.out.println("Final Count is : " + atomicObj.getCount());
+        System.out.println("Final Count is : " +atomicClassObject.getCount());
     }
 }

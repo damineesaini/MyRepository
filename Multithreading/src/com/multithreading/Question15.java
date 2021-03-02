@@ -71,8 +71,8 @@ public class Question15 {
     }
 
     public static void main(String[] args){
-        Question15 obj = new Question15();
-        obj.doWork();
+        Question15 object = new Question15();
+        object.doWork();
         System.out.println("\nEnd of Program");
     }
 }

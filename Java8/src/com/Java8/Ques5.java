@@ -5,7 +5,7 @@ import java.util.function.*;
 public class Ques5 {
     public static void main(String[] args){
 
-        Consumer<Integer> consumer = (value)->System.out.println("I am a consumer, i do not return a value");
+        Consumer<Integer> consumer = (value)->System.out.println("I am a consumer, I take a value but do not return any value");
         consumer.accept(12);
 
         Supplier<Integer> supplier = ()-> 12;

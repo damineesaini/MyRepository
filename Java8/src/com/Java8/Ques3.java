@@ -21,11 +21,11 @@ public class Ques3 {
         int number1 = 10;
         int number2 = 7;
 
-        Ques3 methodRef = new Ques3();
-        FunctionalInterfaceToReturnInt reference = methodRef::add;
+        Ques3 methodReference = new Ques3();
+        FunctionalInterfaceToReturnInt reference = methodReference::add;
         System.out.println("Calling instance add method; result we get : "+reference.returnInt(number1,number2));
 
-        reference = methodRef::subtract;
+        reference = methodReference::subtract;
         System.out.println("Calling instance subtract method; result we get : "+reference.returnInt(number1,number2));
 
         reference = Ques3::multiplication;

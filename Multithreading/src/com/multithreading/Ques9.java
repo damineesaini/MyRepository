@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
-class ExecuteTask implements Runnable{
+class ExecuteTaskClass implements Runnable{
 
     @Override
     public void run() {
@@ -21,24 +21,24 @@ class ExecuteTask implements Runnable{
 
 public class Ques9 {
     public static void main(String[] args){
-        ExecutorService cachedEs = Executors.newCachedThreadPool();
-        ExecutorService fixedEs = Executors.newFixedThreadPool(1);
+        ExecutorService cachedExecutorService = Executors.newCachedThreadPool();
+        ExecutorService fixedExecutorService = Executors.newFixedThreadPool(1);
 
-        ThreadPoolExecutor pool1 = (ThreadPoolExecutor) cachedEs;
-        ThreadPoolExecutor pool2 = (ThreadPoolExecutor) fixedEs;
+        ThreadPoolExecutor pool1 = (ThreadPoolExecutor) cachedExecutorService;
+        ThreadPoolExecutor pool2 = (ThreadPoolExecutor) fixedExecutorService;
 
-        cachedEs.submit(new ExecuteTask());
-        cachedEs.submit(new ExecuteTask());
+        cachedExecutorService.submit(new ExecuteTaskClass());
+        cachedExecutorService.submit(new ExecuteTaskClass());
 
         System.out.println("Executor Size: "+pool1.getPoolSize());
 
-        fixedEs.submit(new ExecuteTask());
-        fixedEs.submit(new ExecuteTask());
+        fixedExecutorService.submit(new ExecuteTaskClass());
+        fixedExecutorService.submit(new ExecuteTaskClass());
 
         System.out.println("Executor Size: "+pool2.getPoolSize());
 
-        cachedEs.shutdown();
-        fixedEs.shutdown();
+        cachedExecutorService.shutdown();
+        fixedExecutorService.shutdown();
 
     }
 }

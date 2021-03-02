@@ -3,7 +3,7 @@ package com.multithreading;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-class ExecutingTasks implements Runnable{
+class ExecutingTasksClass implements Runnable{
     @Override
     public void run() {
         System.out.println("Started executing new task in thread: "+Thread.currentThread().getName());
@@ -23,7 +23,7 @@ public class Ques4b {
         System.out.println("\tCreating Executor Service\n");
         ExecutorService executorService2 = Executors.newSingleThreadExecutor();
 
-        Thread thread3 = new Thread(new ExecutingTasks());
+        Thread thread3 = new Thread(new ExecutingTasksClass());
 
         thread3.start();
 

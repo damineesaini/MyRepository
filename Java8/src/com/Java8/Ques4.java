@@ -24,8 +24,8 @@ class Employee{
 
 public class Ques4 {
     public static void main(String[] args){
-        ConstructorReference reference = Employee::new;
-        Employee employee = reference.getEmployee("Daminee", 23, "Delhi");
+        ConstructorReference constructorReference = Employee::new;
+        Employee employee = constructorReference.getEmployee("Daminee", 23, "Delhi");
         employee.displayDetails();
     }
 }

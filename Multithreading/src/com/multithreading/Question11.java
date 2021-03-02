@@ -12,24 +12,24 @@ public class Question11 {
 
     public void doWork(){
 
-        Thread t1 = new Thread(() -> {
+        Thread thread1 = new Thread(() -> {
             for(int i=0;i<10000;i++){
                 increment();
             }
         });
 
-        Thread t2 = new Thread(() ->{
+        Thread thread2 = new Thread(() ->{
             for(int i=0;i<10000;i++){
                 increment();
             }
         });
 
-        t1.start();
-        t2.start();
+        thread1.start();
+        thread2.start();
 
         try {
-            t1.join();
-            t2.join();
+            thread1.join();
+            thread2.join();
         }catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -38,7 +38,7 @@ public class Question11 {
     }
 
     public static void main(String[] args){
-        Question11 obj = new Question11();
-        obj.doWork();
+        Question11 object = new Question11();
+        object.doWork();
     }
 }

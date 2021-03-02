@@ -1,6 +1,6 @@
 package com.multithreading;
 
-class Run implements Runnable{
+class sleepAndJoinExample implements Runnable{
     @Override
     public void run() {
         for(int i=0;i<10;i++) {
@@ -17,7 +17,7 @@ class Run implements Runnable{
 
 public class Ques2 {
     public static void main(String[] args){
-        Thread thread1 = new Thread(new Run());
+        Thread thread1 = new Thread(new sleepAndJoinExample());
         System.out.println("\tStarting Thread thread1");
         thread1.start();
         System.out.println("waiting for thread thread1");

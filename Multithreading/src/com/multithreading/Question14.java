@@ -47,8 +47,8 @@ public class Question14 {
     }
 
     public static void main(String[] args){
-        Question14 obj = new Question14();
-        obj.doWork();
+        Question14 object = new Question14();
+        object.doWork();
         System.out.println("\nEnd of Program");
     }
 }

@@ -1,6 +1,6 @@
 package com.multithreading;
 
-class Runner implements Runnable{
+class RunnableImplementation implements Runnable{
 
     @Override
     public void run() {
@@ -14,7 +14,7 @@ class Runner implements Runnable{
 public class Ques1a {
     public static void main(String[] args){
 
-        Thread thread1 = new Thread(new Runner());
+        Thread thread1 = new Thread(new RunnableImplementation());
 
         System.out.println("\tImplementing threads using Runnable interface: \n");
 

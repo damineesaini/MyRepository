@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Question11 {
     public static void main(String[] args){
-        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        List<Integer> numberList = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
 
-            double average = numbers.stream()
+            double average = numberList.stream()
                     .mapToInt(number-> number * number)
                     .average()
                     .getAsDouble();

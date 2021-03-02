@@ -1,9 +1,4 @@
 package com.Java8;
-// First number is greater than second number or not             Parameter (int ,int ) Return boolean
-//(2) Increment the number by 1 and return incremented value    Parameter (int) Return int
-//(3) Concatenation of 2 string                                  Parameter (String , String ) Return (String)
-//(4) Convert a string to uppercase and return .                                Parameter (String) Return (String)
-
 
 interface GreaterThan{
     boolean isGreater(int num1, int num2);
@@ -27,18 +22,18 @@ public class Ques1 {
         int number2 = 10;
         String string1 = "Daminee";
         String string2 = "Saini";
-        GreaterThan obj = (int num1,int num2) -> num1>num2;
+        GreaterThan greaterThanObject = (int num1,int num2) -> num1>num2;
 
-        boolean ans = obj.isGreater(number1,number2);
+        boolean ans = greaterThanObject.isGreater(number1,number2);
         System.out.println(number1+" > "+number2+ " = " +ans);
 
-        IncrementBy1 objIncr = (int num)-> num+1;
-        System.out.println("Increment of "+number1+" = "+objIncr.increment(number1));
+        IncrementBy1 IncrementBy1Object = (int num)-> num+1;
+        System.out.println("Increment of "+number1+" = "+IncrementBy1Object.increment(number1));
 
-        Concatenate objConcat = (String str1, String str2)-> str1+str2;
-        System.out.println("Concatenate of 2 strings - \""+string1+"\" and \""+string2+"\"= "+objConcat.concatenation(string1,string2));
+        Concatenate concatenateObject = (String str1, String str2)-> str1+str2;
+        System.out.println("Concatenate of 2 strings - \""+string1+"\" and \""+string2+"\"= "+concatenateObject.concatenation(string1,string2));
 
-        UpperCase objUp = (String str)-> str.toUpperCase();
-        System.out.println("Uppercase string \""+string1+"\" :"+ objUp.toUpper(string1));
+        UpperCase upperCaseObject = (String str)-> str.toUpperCase();
+        System.out.println("Uppercase string \""+string1+"\" :"+ upperCaseObject.toUpper(string1));
     }
 }

@@ -7,7 +7,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-class ScheduleTask implements Runnable{
+class ScheduleTaskClass implements Runnable{
 
     @Override
     public void run() {
@@ -25,20 +25,20 @@ public class Ques8 {
         ScheduledExecutorService scheduleService = Executors.newSingleThreadScheduledExecutor();
         LocalDateTime currentTime = LocalDateTime.now();
 
-        Future obj1 = scheduleService.schedule(new ScheduleTask(),Duration.between(currentTime,currentTime.plusSeconds(2)).toMillis(),TimeUnit.MILLISECONDS);
+        Future futureObject1 = scheduleService.schedule(new ScheduleTaskClass(),Duration.between(currentTime,currentTime.plusSeconds(2)).toMillis(),TimeUnit.MILLISECONDS);
 
-        Future obj2 = scheduleService.scheduleAtFixedRate(new ScheduleTask(),2,1,TimeUnit.MILLISECONDS);
+        Future futureObject2 = scheduleService.scheduleAtFixedRate(new ScheduleTaskClass(),2,1,TimeUnit.MILLISECONDS);
 
-        Future obj3 = scheduleService.scheduleWithFixedDelay(new ScheduleTask(),1,1,TimeUnit.MILLISECONDS);
+        Future futureObject3 = scheduleService.scheduleWithFixedDelay(new ScheduleTaskClass(),1,1,TimeUnit.MILLISECONDS);
 
         scheduleService.shutdown();
         try {
-            scheduleService.awaitTermination(10000, TimeUnit.MILLISECONDS);
+            scheduleService.awaitTermination(100000, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Is 1st task done : "+obj1.isDone());
-        System.out.println("Is 2nd task done : "+obj2.isDone());
-        System.out.println("Is 3rd task done : "+obj2.isDone());
+        System.out.println("Is 1st task done : "+futureObject1.isDone());
+        System.out.println("Is 2nd task done : "+futureObject2.isDone());
+        System.out.println("Is 3rd task done : "+futureObject3.isDone());
     }
 }

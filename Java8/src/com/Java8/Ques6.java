@@ -11,8 +11,8 @@ interface MessageInterface {
 }
 public class Ques6 implements MessageInterface {
     public static void main(String[] args){
-        Ques6 obj = new Ques6();
-        obj.defaultMessageInterface();
+        Ques6 object = new Ques6();
+        object.defaultMessageInterface();
         MessageInterface.staticMessageInterface();
     }
 }

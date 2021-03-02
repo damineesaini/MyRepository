@@ -2,7 +2,7 @@ package com.multithreading;
 
 import java.util.concurrent.*;
 
-class WaitCompletion implements Runnable{
+class WaitForCompletion implements Runnable{
     @Override
     public void run() {
         System.out.println("Currently running thread: "+Thread.currentThread().getName());
@@ -16,8 +16,8 @@ class WaitCompletion implements Runnable{
 public class Ques7 {
     public static void main(String[] args){
         ExecutorService executorService = Executors.newSingleThreadExecutor();
-        Future obj1 = ((ExecutorService) executorService).submit(new WaitCompletion());
-        Future obj2 = executorService.submit(new WaitCompletion());
+        Future obj1 = executorService.submit(new WaitForCompletion());
+        Future obj2 = executorService.submit(new WaitForCompletion());
         executorService.shutdown();
         System.out.println("Is 1st task done : "+obj1.isDone());
         System.out.println("Is 2nd task done : "+obj2.isDone());
