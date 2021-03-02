@@ -15,7 +15,7 @@ class CustomExceptionClass extends Exception{
     }
 }
 
-public class Ques13 {
+public class Question13 {
     public static void main(String[] args) throws CustomExceptionClass{
         try {
             throw new CustomExceptionClass("Caught an exception without stack trace", true);
