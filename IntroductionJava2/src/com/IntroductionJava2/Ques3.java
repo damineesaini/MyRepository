@@ -10,6 +10,8 @@ public class Ques3 {
 
     public static void main(String[] args)
     {
+        System.out.println("For NoClassDefFoundError to occur delete the DefinitionNotFoundClass.class file created after compilation and " +
+            "then run the program.");
         DefinitionNotFoundClass definitionNotFoundClassObj = new DefinitionNotFoundClass();
 
         try{
